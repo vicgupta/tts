@@ -42,7 +42,7 @@ parameters = st._get_query_params()
 
 if parameters:
     if parameters.get('id')[0] == "vicgupta":
-        MAX_CHARS = 10000
+        MAX_CHARS = 100000
 
 form = st.form(key='my_form')
 with form:
