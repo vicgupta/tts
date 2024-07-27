@@ -66,3 +66,9 @@ if submit_button:
     audio_file = open(fileName, "rb")
     audio_bytes = audio_file.read()
     st.audio(audio_bytes, format="audio/mp3")
+    st.download_button(
+        label="Download MP3",
+        data=audio_bytes,
+        file_name="output.mp3",
+        mime="audio/mp3",
+    )
