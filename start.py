@@ -31,7 +31,7 @@ st.set_page_config(
         'About': "# This is a header. This is Text to Speech!"
     }
 )
-st.title('Text to Speech (by Bing) v1.1')
+st.title('Text to Speech v1.2')
 # st.write (todayDate, yesterdayDate)
 async def amain(text, VOICE, fileName) -> None:
     communicate = edge_tts.Communicate(text, VOICE)
